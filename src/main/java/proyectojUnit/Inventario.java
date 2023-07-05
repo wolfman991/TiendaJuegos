@@ -3,6 +3,8 @@ package proyectojUnit;
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Nueva  clase
 public class Inventario {
 	private List<Juego> juegos;
 	private int gananciasTotales;
