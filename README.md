@@ -1,0 +1,23 @@
+# TiendaJuegos
+
+Proyecto que busca hacer una simulación básica para la administración de una tienda de videojuegos, actualmente solo está implementada la lógica de inventario, no se ha implementado una interacción con el usuario,
+para el testeo se uso JUnit para el testing unitario, se hizo uso de Eclipse IDE junto a Maven para administrar el proyecto.
+
+En testeo se evaluaron los métodos para la compra y venta de videojuegos con la respectiva actualización de inventario, añadir los juegos al inventario, en donde se cuenta el número de juegos para revisar que
+no hubo problemas, y con el inventario obtener los reportes de la tienda, es decir, n° compras que realizó la tienda, n° de ventas, y por último las ganancias totales.
+
+
+## Tabla de Contenidos
+
+
+- [Uso](#uso)
+- [Clases](#clases)
+
+
+## Uso
+
+-Tener instalado Eclipse IDE junto a Maven
+-Abrir el proyecto en Eclipse IDE
+-Ejectutar cada grupo de pruebas, son InventarioTest.java y JuegoTest.Java
+
+
