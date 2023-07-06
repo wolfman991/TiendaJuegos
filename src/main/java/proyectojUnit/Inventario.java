@@ -74,4 +74,7 @@ public class Inventario {
 		}
 		return false;
 	}
+	public List<Juego> ListadoJuegos(){
+		return juegos;
+	}
 }
