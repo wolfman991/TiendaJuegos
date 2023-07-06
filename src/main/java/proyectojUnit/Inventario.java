@@ -49,6 +49,15 @@ public class Inventario {
 		this.calcularReporte();
 	}
 	
+	public boolean BuscarJuego(int id) {
+		for (Juego juego : juegos) {
+			if (id == juego.getId()) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public boolean ComprarStock(int id, int cantidad) {
 		for (int i = 0; i < juegos.size(); i++ ) {
 			if (juegos.get(i).getId() == id) {
@@ -73,6 +82,16 @@ public class Inventario {
 			}
 		}
 		return false;
+	}
+	
+	public boolean NuevoJuego(int id ,String nombre, int stock, int precio_compra, int precio_venta, String genero, String plataforma) {
+		if (this.BuscarJuego(id)) {
+			return false;
+		}
+		Juego juego;
+		juego = new Juego(id, nombre, stock, precio_compra, precio_venta, genero, plataforma);
+		this.AñadirJuego(juego);
+		return true;
 	}
 	public List<Juego> ListadoJuegos(){
 		return juegos;

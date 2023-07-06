@@ -108,4 +108,33 @@ public class InventarioTest {
 		Assert.assertEquals(listado.size(), 3);
 	}
 
+	public void testNuevoJuegoRepetido() {
+		//When
+		int id = 1;
+		String nombre = "COD";
+		int stock = 10;
+		int precio_compra = 55;
+		int precio_venta =  70;
+		String genero = "FPS";
+		String plataforma = "PS5";
+		
+		
+		//Then
+		Assert.assertFalse(inventario.NuevoJuego(id, nombre, stock, precio_compra, precio_venta, genero, plataforma));
+	}
+	
+	public void testNuevoJuego() {
+		//When
+		int id = 10;
+		String nombre = "FIFA";
+		int stock = 10;
+		int precio_compra = 55;
+		int precio_venta =  70;
+		String genero = "Deporte";
+		String plataforma = "PC";
+		
+		//Then
+		Assert.assertTrue(inventario.NuevoJuego(id, nombre, stock, precio_compra, precio_venta, genero, plataforma));
+	}
+	
 }
